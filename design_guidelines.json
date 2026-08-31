@@ -1,0 +1,108 @@
+{
+  "project_name": "QwickAds Sales Manager",
+  "theme": "light",
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "Plus Jakarta Sans",
+    "instructions": "BANNED FONTS: Inter, Roboto, Open Sans. Use 'Outfit' for all headings (H1-H6) with tight letter spacing (tracking-tight) to give a premium SaaS feel. Use 'Plus Jakarta Sans' for all body text, inputs, and tabular data to ensure crisp readability. Do not exceed text-5xl for main greetings on mobile. Maintain a maximum 2-step Tailwind jump between heading and subheading."
+  },
+  "colors": {
+    "palette_strategy": "Archetype 3 (Pastel & Soft) fused with premium SaaS aesthetics. Highly readable, optimistic, and action-oriented.",
+    "variables": {
+      "background": "#FDFBFF",
+      "foreground": "#0F172A",
+      "primary": "#7C3AED",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#F3E8FF",
+      "secondary_foreground": "#6D28D9",
+      "card": "#FFFFFF",
+      "card_foreground": "#0F172A",
+      "muted": "#F8FAFC",
+      "muted_foreground": "#64748B",
+      "border": "#E2E8F0",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "destructive": "#EF4444"
+    },
+    "instructions": "Never use pure black (#000000); always use the tinted charcoal (#0F172A). Use QwickAds purple/lavender for the primary identity. Success/Conversion MUST be Green, Follow-ups MUST be Orange/Yellow, Negative Outcomes MUST be Red. Use semantic colors heavily for the call outcome buttons."
+  },
+  "visual_enhancers": {
+    "shadows": "Use soft, premium shadows (shadow-[0_8px_30px_rgb(0,0,0,0.04)]) for dashboard cards. Avoid harsh, dark shadows.",
+    "borders": "Use subtle borders (border-purple-100 or border-slate-200) to define edges. Card radius should be rounded-2xl or rounded-3xl on mobile for a 'zoom-in' app feel, and rounded-xl on desktop.",
+    "surfaces": "Use Glassmorphism (backdrop-blur-xl bg-white/80 with 1px white top border) for the mobile bottom nav and sticky action bars. Solid white for cards on the #FDFBFF background."
+  },
+  "grids_and_layouts": {
+    "mobile_strategy": "Mobile-first. Use a 'Zoom In' approach with large, touch-friendly cards. Vertical scrolling with sticky bottom navigation. Call/WhatsApp buttons must be massive and sticky.",
+    "desktop_strategy": "Admin Dashboard must use high-density bento grids for analytics. Left collapsible sidebar for navigation. Utilize pure HTML/Tailwind for complex layout matrices rather than forcing Shadcn wrappers where inappropriate.",
+    "spacing": "Generous Spacing Philosophy. Use p-6 or p-8 inside cards. Add breathing room between sections."
+  },
+  "components": {
+    "buttons": "Pill-shaped (rounded-full) or highly rounded (rounded-xl) for standard buttons. Action buttons must have hover lift (-translate-y-1) and shadow increase.",
+    "cards": "Cardless or soft-rounded styles. Employee dashboard greeting should feel expansive, not boxed in. Today's Calls should be stacked cards.",
+    "inputs_and_forms": "Use Shadcn UI for forms, heavily styled to remove the default Vercel look. Inputs should have subtle purple focus rings (focus:ring-primary/50).",
+    "modals": "Use Shadcn Dialogs. Must be bottom-sheet style on mobile, centered modal on desktop. Conversion modal MUST include a confetti overlay.",
+    "data_tables": "Admin employee performance table must use clean, padding-rich rows (Shadcn Table) with badge indicators for statuses."
+  },
+  "motion": {
+    "page_transitions": "Subtle fade and slide-up (framer-motion).",
+    "micro_interactions": "Card hover lifts, button presses (scale: 0.98), smooth state changes.",
+    "data_animations": "Animated number counters for dashboard stats (Calls Today, Interested). Animated progress bar for Daily Targets.",
+    "notifications": "Use 'sonner' for toast notifications. Smooth enter/exit.",
+    "instructions": "Motion should feel swift and highly responsive. Do not use 'transition: all'."
+  },
+  "accessibility": {
+    "contrast": "Ensure all text on primary purple buttons is pure white. Use APCA-compliant contrast.",
+    "testing": "All interactive elements MUST include a data-testid attribute in kebab-case, role-based format (e.g., data-testid='call-outcome-interested').",
+    "focus": "Maintain clear focus states for keyboard navigation, especially for the Admin desktop view."
+  },
+  "media": {
+    "icons": "Use 'lucide-react' for all icons. Icons should be beautifully sized (w-5 h-5 or w-6 h-6) and use semantic colors where appropriate.",
+    "charts": "Use Shadcn charts (Recharts) for Admin Analytics (sales funnel, loss-reason charts)."
+  },
+  "image_urls": [
+    {
+      "url": "https://images.unsplash.com/photo-1638272181967-7d3772a91265?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxhdmVuZGVyJTIwcHVycGxlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3ODcyNjA4MTZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract purple wave background",
+      "category": "Login Page / Auth Screen Background"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHByb2ZpbGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODcyNjA4MTZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional male avatar",
+      "category": "Employee / Admin Profile Avatar"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHByb2ZpbGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODcyNjA4MTZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional female avatar",
+      "category": "Customer / Employee Avatar"
+    }
+  ],
+  "libraries": {
+    "animation": "framer-motion",
+    "confetti": "react-confetti",
+    "toasts": "sonner",
+    "icons": "lucide-react",
+    "charts": "recharts (via shadcn)"
+  },
+  "instructions_to_main_agent": [
+    "Install Google Fonts 'Outfit' and 'Plus Jakarta Sans'. Setup Tailwind properly with the provided variables.",
+    "Implement a role-based structure: Mobile layout for 'Sales Employee' (bottom nav) and Desktop layout for 'Admin' (sidebar).",
+    "The Employee Dashboard must have a massive 'Today's Calls' section with native 'tel:' links and WhatsApp deep links.",
+    "Use framer-motion for the daily target progress bar and dashboard counters.",
+    "Call outcome workflow MUST be colored buttons (Green/Orange/Red) with smooth modal popups for follow-up scheduling.",
+    "Admin dashboard requires sales funnel charts and 'Why did they say no' visualization using recharts.",
+    "Include 'react-confetti' triggering upon marking a lead as 'Converted'."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: 'transition: all'. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add '.App { text-align: center; }' in the css file.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "All interactive and key informational elements MUST include a data-testid attribute to facilitate robust automated testing."
+  ]
+}

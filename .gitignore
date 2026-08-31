@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production builds
+build/
+dist/
+
+# Environment files
+.env
+.env.*
+*.env
+
+# IDE and editors
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+*.pem
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+
+# Archive files
+**/*.zip
+**/*.tar.gz
+
+# Internal tooling
+.emergent/
+memory/
+test_reports/
+test_result.md
+.gitconfig
+
+# Firebase
+.firebase/
+firestore-debug.log
+ui-debug.log
